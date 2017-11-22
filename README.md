@@ -7,13 +7,15 @@ In every situation then all checkboxes are checked 'true' you can call an option
 
 JQuery is required.
 
-Example
+## Example
 
 ```code
 
 checkboxWithCallback(clickAllElement, changeElements, callback);
 
 With testparameter
+
+checkboxWithCallback("input[name='all']","input[name='test']");
 
 checkboxWithCallback("input[name='all']","input[name='test']",function test(){
 
@@ -22,6 +24,8 @@ checkboxWithCallback("input[name='all']","input[name='test']",function test(){
     }
 
 );
+
+checkboxWithCallback("#allElement",".element");
 
 checkboxWithCallback("#allElement",".element",function test(){
 
